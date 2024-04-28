@@ -1,0 +1,11 @@
+﻿Calculadora_v01_SemClasses
+
+Objetivo:
+	Calculadora simples
+
+Funcionamento:
+	Listar as operações (4 básicas)
+	Pedir valores (2 valores)
+	Pedir operação
+	Realizar o cálculo
+	Mostrar o resultado

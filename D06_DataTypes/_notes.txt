@@ -1,0 +1,37 @@
+﻿---------------------------
+Data types (tipos de dados)
+---------------------------
+
+	Value types (standard data types)
+		Números:
+			inteiros,
+			decimais
+		Lógico:
+			boolean
+
+		Ficam na stack (zona de memória onde são guardados os value types)	
+
+
+------------------------------------------------------------------------------
+
+
+	Reference types (objetos)
+		Nativos:
+			Console,
+			Convert
+		Classes criadas
+			Formando,
+			Curso,
+			Cliente
+
+		Ficam na heap (zona de memória onde são guardados os reference types)		
+
+		Geridos por um mecanismo chamado garbage collector (GC)
+
+--------------------------------------------------------------------------------
+
+-----------------
+REGRAS DE ESCRITA
+-----------------
+camelCase: variáveis
+PascalCase: tudo das classes
