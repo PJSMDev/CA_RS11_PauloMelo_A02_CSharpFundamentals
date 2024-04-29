@@ -45,6 +45,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitHubProject", "GitHubProj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D12_Methods", "D12_Methods\D12_Methods.csproj", "{C4CFFC8C-D820-453E-8766-1C789725FD67}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D13_AccessModifiers", "D13_AccessModifiers\D13_AccessModifiers.csproj", "{90124E97-E06A-48F1-A04C-0DBE901799B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D14_ErrorHandling", "D14_ErrorHandling\D14_ErrorHandling.csproj", "{49DDC26C-4EEF-482D-AC6C-14755CE7D8EE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -135,6 +139,14 @@ Global
 		{C4CFFC8C-D820-453E-8766-1C789725FD67}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C4CFFC8C-D820-453E-8766-1C789725FD67}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C4CFFC8C-D820-453E-8766-1C789725FD67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90124E97-E06A-48F1-A04C-0DBE901799B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90124E97-E06A-48F1-A04C-0DBE901799B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90124E97-E06A-48F1-A04C-0DBE901799B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90124E97-E06A-48F1-A04C-0DBE901799B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49DDC26C-4EEF-482D-AC6C-14755CE7D8EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49DDC26C-4EEF-482D-AC6C-14755CE7D8EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49DDC26C-4EEF-482D-AC6C-14755CE7D8EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49DDC26C-4EEF-482D-AC6C-14755CE7D8EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

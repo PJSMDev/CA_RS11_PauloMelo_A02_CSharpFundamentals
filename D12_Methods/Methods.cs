@@ -63,6 +63,7 @@ namespace D12_Methods
         public void PassingReferences(ref int value)
         {
             value = 10;     // mudar o valor implica mudar em todas as referências
+            // uma única zona de memória (partilhada)
 
             Utility.WriteMessage($"1. Valor dentro do método: {value}", "", "\n\n");      // 10
         }
