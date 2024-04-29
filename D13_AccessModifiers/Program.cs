@@ -13,8 +13,6 @@ namespace D13_AccessModifiers
         {
             Utility.SetUnicodeConsole();
 
-            Utility.WriteTitle("Create User");
-
             #region Instances
             User user01 = new User();
             User user02 = new User(1, "PJSM", "IT", DateTime.Today, "pjsm", "querty");

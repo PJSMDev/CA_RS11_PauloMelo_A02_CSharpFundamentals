@@ -64,13 +64,7 @@ namespace D13_AccessModifiers
             Id = id;
             Name = name;
             Department = department;
-
-            if (!DateTime.TryParse(regDate.ToString(), out DateTime dateParsed))
-            {
-                dateParsed = DateTime.Today;
-            }
-            RegistrationDate = dateParsed;
-
+            RegistrationDate = regDate;
             Username = userName;
             Password = password;
         }
@@ -79,6 +73,8 @@ namespace D13_AccessModifiers
         #region Methods
         public void CreateUser()
         {
+            Utility.WriteTitle("Create User");
+
             Utility.WriteMessage("Name: ");
             Name = Console.ReadLine();
 
@@ -86,11 +82,12 @@ namespace D13_AccessModifiers
             Department = Console.ReadLine();
 
             DateTime dateParsed;
-            Utility.WriteMessage("Data de registo: ");
+            Utility.WriteMessage("Data de registo (MM/DD/YYYY): ");
             while (!DateTime.TryParse(Console.ReadLine(), out dateParsed))
             {
-                Utility.WriteMessage("Data inválida. Tente novamente...", "", "\n");
+                Utility.WriteMessage("Data inválida. Tente novamente (MM/DD/YYYY): ");
             }
+            RegistrationDate = dateParsed;
 
             Utility.WriteMessage("Username: ");
             Username = Console.ReadLine();
