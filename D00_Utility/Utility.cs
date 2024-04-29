@@ -54,7 +54,7 @@ namespace D00_Utility
         public static void PauseConsole()
         {
             Console.ForegroundColor = ConsoleColor.Red;
-            Utility.WriteMessage("Pressione qualquer tecla para continuar...");
+            Utility.WriteMessage("\nPressione qualquer tecla para continuar...");
             Console.ReadLine();
             Console.ForegroundColor = ConsoleColor.White;
             Console.Clear();

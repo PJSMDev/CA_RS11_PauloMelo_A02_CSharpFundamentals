@@ -26,8 +26,6 @@ namespace D13_AccessModifiers
 
             user01.ListUser();
 
-            Utility.WriteMessage("\n\n");
-
             user02.ListUser();
 
             Utility.TerminateConsole();

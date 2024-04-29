@@ -104,7 +104,7 @@ namespace D13_AccessModifiers
         {
             Utility.WriteTitle("List User");
 
-            Utility.WriteMessage($"ID: {Id}\nName: {Name}\nDepartment: {Department}\nRegistration Date: {RegistrationDate.ToString("d")}\nUsername: {Username}\nPassword: {Password}");
+            Utility.WriteMessage($"ID: {Id}\nName: {Name}\nDepartment: {Department}\nRegistration Date: {RegistrationDate.ToString("d")}\nUsername: {Username}\nPassword: {Password}", "", "\n\n");
         }
         #endregion
     }
