@@ -9,7 +9,7 @@ using D00_Utility;
 
 namespace D13_AccessModifiers
 {
-    internal class User
+    internal class User     // --> se uma classe é internal, tudo dentro da classe também deve ser internal <--
     {
         /*
          * D13, criar a classe User:
@@ -23,28 +23,26 @@ namespace D13_AccessModifiers
 
         #endregion
 
-        #region Classic properties
-        public DateTime RegistrationDate
+        #region Properties (dados)
+        internal int Id { get; }      // read-only
+
+        internal string Name { get; set; }
+
+        internal string Department { get; set; }
+
+        internal DateTime RegistrationDate
         {
             get { return registrationDate; }
             set { registrationDate = value; }       // <- se fosse read-only, tirava isto
         }
-        #endregion
 
-        #region Auto-implemented properties
-        public int Id { get; }      // read-only
+        internal string Username { get; set; }
 
-        public string Name { get; set; }
-
-        public string Department { get; set; }
-
-        public string Username { get; set; }
-
-        public string Password { get; set; }
+        internal string Password { get; set; }
         #endregion
 
         #region Constructors
-        public User() 
+        internal User() 
         {
             Id = 1;     // pq não vou conseguir atribuir-lhe um valor
             // os construtores é que vão lidar com a atribuição dos valores a fields read-only
@@ -57,7 +55,7 @@ namespace D13_AccessModifiers
             Password = string.Empty;
         }
 
-        public User(int id, string name, string department, DateTime regDate, string userName, string password)
+        internal User(int id, string name, string department, DateTime regDate, string userName, string password)
         {
             Id = id;
             Name = name;
@@ -69,7 +67,7 @@ namespace D13_AccessModifiers
         #endregion
 
         #region Methods
-        public void CreateUser()
+        internal void CreateUser()
         {
             Utility.WriteTitle("Create User");
 
@@ -79,13 +77,11 @@ namespace D13_AccessModifiers
             Utility.WriteMessage("Department: ");
             Department = Console.ReadLine();
 
-            DateTime dateParsed;
             Utility.WriteMessage("Data de registo (MM/DD/YYYY): ");
-            while (!DateTime.TryParse(Console.ReadLine(), out dateParsed))    // Todo MRS: usar o field
+            while (!DateTime.TryParse(Console.ReadLine(), out registrationDate))    
             {
                 Utility.WriteMessage("Data inválida. Tente novamente (MM/DD/YYYY): ");
             }
-            RegistrationDate = dateParsed;
 
             Utility.WriteMessage("Username: ");
             Username = Console.ReadLine();
@@ -95,11 +91,16 @@ namespace D13_AccessModifiers
             Utility.WriteMessage("\n");
         }
 
-        public void ListUser()
+        internal void ListUser(string beginTitle = "")
         {
-            Utility.WriteTitle("List User");
+            Utility.WriteTitle("List User", beginTitle);
 
-            Utility.WriteMessage($"ID: {Id}\nName: {Name}\nDepartment: {Department}\nRegistration Date: {RegistrationDate.ToString("d")}\nUsername: {Username}\nPassword: {Password}", "", "\n\n");
+            Utility.WriteMessage($"Person ID: {Id}", "", "\n");
+            Utility.WriteMessage($"Name: {Name}", "", "\n");
+            Utility.WriteMessage($"Department: {Department}", "", "\n");
+            Utility.WriteMessage($"Registration date: {RegistrationDate}", "", "\n");
+            Utility.WriteMessage($"Username: {Username}", "", "\n");
+            Utility.WriteMessage($"Password: {Password}", "", "\n\n");
         }
         #endregion
     }
