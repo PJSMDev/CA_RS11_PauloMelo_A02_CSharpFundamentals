@@ -83,7 +83,7 @@ namespace D13_AccessModifiers
 
             DateTime dateParsed;
             Utility.WriteMessage("Data de registo (MM/DD/YYYY): ");
-            while (!DateTime.TryParse(Console.ReadLine(), out dateParsed))
+            while (!DateTime.TryParse(Console.ReadLine(), out dateParsed))    // Todo MRS: usar o field
             {
                 Utility.WriteMessage("Data inválida. Tente novamente (MM/DD/YYYY): ");
             }
