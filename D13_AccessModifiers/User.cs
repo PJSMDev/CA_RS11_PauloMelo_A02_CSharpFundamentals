@@ -43,8 +43,6 @@ namespace D13_AccessModifiers
         public string Password { get; set; }
         #endregion
 
-
-
         #region Constructors
         public User() 
         {
