@@ -36,7 +36,7 @@ namespace D08_DataTypesManipulation
             int value02 = 100;
             double value03 = 2.3;
             double value04 = -12.1;
-            double value05 = 64;
+            //double value05 = 64;
             double value06 = 4;
             #endregion
             

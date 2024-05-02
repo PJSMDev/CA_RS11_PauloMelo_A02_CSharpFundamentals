@@ -49,6 +49,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D13_AccessModifiers", "D13_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D14_ErrorHandling", "D14_ErrorHandling\D14_ErrorHandling.csproj", "{49DDC26C-4EEF-482D-AC6C-14755CE7D8EE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E06_Calculadora_v03_ComTratamentoErros", "E06_Calculadora_v03_ComTratamentoErros\E06_Calculadora_v03_ComTratamentoErros.csproj", "{5CDE9114-18DC-4C2F-B64F-C963AE5622D3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -147,6 +149,10 @@ Global
 		{49DDC26C-4EEF-482D-AC6C-14755CE7D8EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49DDC26C-4EEF-482D-AC6C-14755CE7D8EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{49DDC26C-4EEF-482D-AC6C-14755CE7D8EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CDE9114-18DC-4C2F-B64F-C963AE5622D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CDE9114-18DC-4C2F-B64F-C963AE5622D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CDE9114-18DC-4C2F-B64F-C963AE5622D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CDE9114-18DC-4C2F-B64F-C963AE5622D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

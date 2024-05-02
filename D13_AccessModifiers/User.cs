@@ -100,7 +100,8 @@ namespace D13_AccessModifiers
             Utility.WriteMessage($"Department: {Department}", "", "\n");
             Utility.WriteMessage($"Registration date: {RegistrationDate}", "", "\n");
             Utility.WriteMessage($"Username: {Username}", "", "\n");
-            Utility.WriteMessage($"Password: {Password}", "", "\n\n");
+            //Utility.WriteMessage($"Password: {Password}", "", "\n");
+            Utility.HidePassword(Password);
         }
         #endregion
     }

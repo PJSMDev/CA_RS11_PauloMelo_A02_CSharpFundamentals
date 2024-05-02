@@ -46,7 +46,7 @@ namespace D14_ErrorHandling
                 #endregion
 
                 #region Versão de produção (devemos implementar um sistema de logs)
-                //Utility.WriteMessage("Aconteceu um erro", "", "\n");        // versão de produção -> devemos implementar um sistema de logs
+                //Utility.WriteMessage("Aconteceu um erro", "", "\n");        
                 #endregion
             }
             // os catchs têm de estar em linhas consecutivas (sem \n's)

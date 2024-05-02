@@ -60,5 +60,12 @@ namespace D00_Utility
             Console.ForegroundColor = ConsoleColor.White;
             Console.Clear();
         }
+
+        public static void HidePassword(string password)
+        {
+            string hiddenPassword = new string('*', password.Length);
+
+            Utility.WriteMessage(hiddenPassword, "", "\n");
+        }
     }
 }
