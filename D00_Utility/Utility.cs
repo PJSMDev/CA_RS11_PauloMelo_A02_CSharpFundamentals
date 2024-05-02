@@ -61,6 +61,7 @@ namespace D00_Utility
             Console.Clear();
         }
 
+        // TODO PM: só funciona para a ListUser() e não com a CreateUser() -> (a cada keystroke) -> stream????
         public static void HidePassword(string password)
         {
             string hiddenPassword = new string('*', password.Length);

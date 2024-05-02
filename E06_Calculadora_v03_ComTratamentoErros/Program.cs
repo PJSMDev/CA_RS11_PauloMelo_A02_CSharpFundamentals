@@ -15,8 +15,29 @@ namespace E06_Calculadora_v03_ComTratamentoErros
 
             Calculator calculator = new Calculator();
 
+            Utility.WriteTitle("Calculadora");
+
             calculator.DisplayMenu();
-            calculator.ReadValues();
+
+            try
+            {
+                calculator.ReadValues();
+            }
+            catch (FormatException ex)
+            {
+                Utility.WriteMessage("Insira um número", "", "\n");
+                //throw;
+            }
+            catch (DivideByZeroException)
+            {
+                Utility.WriteMessage("Divisão por zero. Impossível", "", "\n");
+            }
+            catch (Exception ex)
+            {
+                Utility.WriteMessage($"Erro: {ex.Message}", "", "\n");
+            }
+            //calculator.ReadValues();
+
             calculator.Calculation();
             calculator.PrintResult();
 

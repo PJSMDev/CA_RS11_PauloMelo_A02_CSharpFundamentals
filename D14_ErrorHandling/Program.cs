@@ -25,6 +25,8 @@ namespace D14_ErrorHandling
             #region Com tratamento de erros
             try        // snippet -> Tab Tab
             {
+                bool teste = false;
+                string texto = "qaz";
                 int number02;
 
                 Utility.WriteMessage("Número: ");

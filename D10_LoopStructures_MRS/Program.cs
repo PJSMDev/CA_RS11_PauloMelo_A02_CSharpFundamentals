@@ -26,6 +26,8 @@ namespace D10_LoopStructures
 
             while (string01 != "x")
             {
+                Console.Clear();
+                Utility.WriteTitle("While");
                 Utility.WriteMessage("Para saíres escreve x: ");
                 string01 = Console.ReadLine();
                 // É preciso dar a oportunidade de ser falso para evitar um loop infinito
