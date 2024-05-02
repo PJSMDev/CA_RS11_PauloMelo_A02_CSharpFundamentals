@@ -138,23 +138,22 @@ namespace D09_ConditionalStructures
 
             Utility.WriteTitle("Switch");
 
-            // ToDo MRS: Se o nº for entre 1 e 4 dizer o seu extenso
             switch (number)
             {
                 case 0:
                     Utility.WriteMessage("O número é 0");
                     break;
                 case 1:
-                    Utility.WriteMessage("O número é \"um\"");
+                    Utility.WriteMessage("O número é um");
                     break;
                 case 2:
-                    Utility.WriteMessage("O número é \"dois\"");
+                    Utility.WriteMessage("O número é dois");
                     break;
                 case 3:
-                    Utility.WriteMessage("O número é \"três\"");
+                    Utility.WriteMessage("O número é três");
                     break;
                 case 4:
-                    Utility.WriteMessage("O número é \"quatro\"");
+                    Utility.WriteMessage("O número é quatro");
                     break;
                 case 5:
                     Utility.WriteMessage("O número é 5");
