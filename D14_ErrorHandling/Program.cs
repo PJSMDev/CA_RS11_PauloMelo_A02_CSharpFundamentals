@@ -42,7 +42,7 @@ namespace D14_ErrorHandling
             {
                 #region Versão de desenolvimento
                 Utility.WriteMessage($"Erro: {ex.Message}", "\n");        // imprime o erro sem ter de fazer throw (terminar)
-                                                                                //throw;        // lançar o erro e interrompe a execução
+                //throw;        // lançar o erro e interrompe a execução
                 #endregion
 
                 #region Versão de produção (devemos implementar um sistema de logs)
