@@ -26,7 +26,6 @@ namespace E06_Calculadora_v03_ComTratamentoErros
             catch (FormatException ex)
             {
                 Utility.WriteMessage("Insira um número", "", "\n");
-                //throw;
             }
             catch (DivideByZeroException)
             {
@@ -36,7 +35,6 @@ namespace E06_Calculadora_v03_ComTratamentoErros
             {
                 Utility.WriteMessage($"Erro: {ex.Message}", "", "\n");
             }
-            //calculator.ReadValues();
 
             calculator.Calculation();
             calculator.PrintResult();
