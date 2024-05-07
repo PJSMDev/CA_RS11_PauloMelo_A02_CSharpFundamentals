@@ -9,7 +9,7 @@ namespace E06_Calculadora_v03_ComTratamentoErros
 {
     internal class Calculator
     {
-        A gestão de erros têm de estar do lado da Progam. Métodos não geram erros a menos que sirvam exclusivamente para isso
+        //A gestão de erros têm de estar do lado da Progam. Métodos não geram erros a menos que sirvam exclusivamente para isso
         internal string[] menu =
         {
             "+  Soma",
