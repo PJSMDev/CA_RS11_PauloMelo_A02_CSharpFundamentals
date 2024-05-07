@@ -51,6 +51,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D14_ErrorHandling", "D14_Er
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E06_Calculadora_v03_ComTratamentoErros", "E06_Calculadora_v03_ComTratamentoErros\E06_Calculadora_v03_ComTratamentoErros.csproj", "{5CDE9114-18DC-4C2F-B64F-C963AE5622D3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E06_Calculadora_v04", "E06_Calculadora_v04\E06_Calculadora_v04.csproj", "{1C4D4C1E-64D2-42BB-AFDE-D6111DA2D9B6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -153,6 +155,10 @@ Global
 		{5CDE9114-18DC-4C2F-B64F-C963AE5622D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5CDE9114-18DC-4C2F-B64F-C963AE5622D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5CDE9114-18DC-4C2F-B64F-C963AE5622D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C4D4C1E-64D2-42BB-AFDE-D6111DA2D9B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C4D4C1E-64D2-42BB-AFDE-D6111DA2D9B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C4D4C1E-64D2-42BB-AFDE-D6111DA2D9B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C4D4C1E-64D2-42BB-AFDE-D6111DA2D9B6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

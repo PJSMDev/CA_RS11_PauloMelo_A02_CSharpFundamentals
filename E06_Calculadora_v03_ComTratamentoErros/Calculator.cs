@@ -9,7 +9,7 @@ namespace E06_Calculadora_v03_ComTratamentoErros
 {
     internal class Calculator
     {
-        // TODO: A gestão de erros têm de estar do lado da Progam. Métodos não geram erros a menos que sirvam exclusivamente para isso
+        // TODO PM: A gestão de erros têm de estar do lado da Progam. Métodos não geram erros a menos que sirvam exclusivamente para isso
         internal string[] menu =
         {
             "+  Soma",
@@ -37,52 +37,12 @@ namespace E06_Calculadora_v03_ComTratamentoErros
         {
             Utility.WriteMessage("Valor 1: ");
             Value1 = Convert.ToDouble(Console.ReadLine());
-            //try
-            //{
-            //    Value1 = Convert.ToDouble(Console.ReadLine());
-            //}
-            //catch (FormatException ex)
-            //{
-            //    Utility.WriteMessage("Insira um número", "", "\n");
-            //}
-            //catch (Exception ex)
-            //{
-            //    Utility.WriteMessage($"Erro: {ex.Message}", "", "\n");
-            //}
 
             Utility.WriteMessage("Operação matemática: ");
             Operator = Console.ReadLine();
-            //try
-            //{
-            //    Operator = Console.ReadLine();
-            //}
-            //catch (FormatException ex)
-            //{
-            //    Utility.WriteMessage("Insira um operador matemático (+,-,*,/)", "", "\n");      // TODO PM: Não funciona porque qualquer caracter evita este catch e aceita números na forma de caracter
-            //}
-            //catch (Exception ex) 
-            //{
-            //    Utility.WriteMessage($"Erro: {ex.Message}", "", "\n");
-            //}
 
             Utility.WriteMessage("Value 2: ");
             Value2 = Convert.ToDouble(Console.ReadLine());
-            //try
-            //{
-            //    Value2 = Convert.ToDouble(Console.ReadLine());
-            //}
-            //catch (FormatException ex)
-            //{
-            //    Utility.WriteMessage("Insira um número:");
-            //}
-            //catch (DivideByZeroException ex)        // TODO PM: não funciona: acho que está a receber o operador como um caracter e não toma '/' como divisão
-            //{
-            //    Utility.WriteMessage("Divisão por zero. Impossível");
-            //}
-            //catch (Exception ex)
-            //{
-            //    Utility.WriteMessage(ex.Message, "", "\n");
-            //}
         }
 
         internal void Calculation()
