@@ -28,11 +28,14 @@ namespace E06_Calculadora_v04
             Utility.WriteMessage("\n");
         }
 
+        // Tod MRS: Podes passasr este método para a Utility, porque de certeza que o podes reutilizar noutros projetos.
         internal void ClearCalculatorScreen()
         {
             Console.Clear();
         }
-
+        
+        // Todo MRS: Um método para escrever titles diferentes por operaçºao, não é muito útil.
+        // Todo MRS: Porque é que não crias uma matriz com 3 colunas (em vez do vetor) e colocas lá os títtulos? Ou então, criar um vetor só com os títulos?
         internal void OperationTitle(string operation)
         {
             switch (operation)
