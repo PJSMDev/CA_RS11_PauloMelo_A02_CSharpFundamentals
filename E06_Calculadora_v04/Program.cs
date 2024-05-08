@@ -18,6 +18,7 @@ namespace E06_Calculadora_v04
 
             calculatorUtilities.DisplayMenu();
 
+            // Todo MRS: Try encadeados? Porquê?
             try
             {
                 calculator.ReadOperation();
