@@ -9,6 +9,9 @@ namespace E06_Calculadora_v04
 {
     internal class Calculator
     {
+        
+        // Todo MRS: Devias trabalhar com Regions
+        
         internal double Value01 { get; set; }
         internal double Value02 { get; set; }
         internal double Result { get; set; }
@@ -46,6 +49,7 @@ namespace E06_Calculadora_v04
 
         internal void Division()
         {
+            // Todo MRS: Isto não podia ser resolvido com um simples IF?
             switch (Value02) 
             {
                 case 0:
@@ -57,6 +61,8 @@ namespace E06_Calculadora_v04
             }
         }
 
+        // ---------------------------------------
+        // Todo MRS: Os 3 métodos seguintes não são específicos desta classe, pois não? Ou passam para a Utility ou para a CalculatorUtility.
         internal void DisplayErrorDivisionByZero()
         {
             Utility.WriteMessage("Divisão por 0. Impossível.", "", "\n");
@@ -71,7 +77,9 @@ namespace E06_Calculadora_v04
         {
             Utility.WriteMessage("Erro. Insira valores numéricos.", "", "\n\n");
         }
+        // ---------------------------------------
 
+        
         internal void Calculation()
         {
             switch (Operator)
