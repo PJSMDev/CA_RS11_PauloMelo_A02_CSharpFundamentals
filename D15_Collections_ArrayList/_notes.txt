@@ -1,0 +1,27 @@
+﻿Classe Person:
+	2 propriedades: Name, City
+	2 construtores
+	1 método: ListPerson
+
+--------------------------------
+ESTRUTURAS DE DADOS (em memória)
+--------------------------------
+
+Variables
+
+Arrays
+	Vetores (single)
+	Matrizes (multi)
+
+Collections
+	Normal collections
+	Generic collections
+
+
+---------
+ARRAYLIST
+---------
+
+ArrayList é fracamente tipada
+
+Pode conter qualquer tipo de dados

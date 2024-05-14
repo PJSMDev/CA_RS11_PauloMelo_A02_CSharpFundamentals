@@ -1,0 +1,13 @@
+-------------------
+Estruturas de dados
+-------------------
+Variáveis
+Arrays: single + multi
+Collections
+    ArrayList
+Generic Collections
+    fortemente tipada
+    constraint do data type
+    List<T>
+    Queue<T>: fila - FIFO (first-in-first-out)
+    Stack<T>: pilha - LIFO (last-in-first-out)
