@@ -9,14 +9,15 @@ namespace E06_Calculadora_v04
 {
     internal class Calculator
     {
-        
-        // Todo MRS: Devias trabalhar com Regions
-        
+
+        #region Properties
         internal double Value01 { get; set; }
         internal double Value02 { get; set; }
         internal double Result { get; set; }
         internal string Operator { get; set; }
+        #endregion
 
+        #region Methods
         internal void ReadOperation()
         {
             Utility.WriteMessage("Operação matemática: ");
@@ -106,5 +107,6 @@ namespace E06_Calculadora_v04
         {
             Utility.WriteMessage($"{Value01} {Operator} {Value02} = {Result}");
         }
+        #endregion
     }
 }

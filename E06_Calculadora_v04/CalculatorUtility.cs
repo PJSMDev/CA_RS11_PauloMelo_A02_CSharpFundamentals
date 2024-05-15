@@ -18,6 +18,7 @@ namespace E06_Calculadora_v04
             "/ -> Divisão"
         };
 
+        #region Methods
         internal void DisplayMenu()
         {
             Utility.WriteTitle("Calculadora v04");
@@ -56,5 +57,21 @@ namespace E06_Calculadora_v04
                     break;
             }
         }
+
+        //internal void DisplayErrorDivisionByZero()
+        //{
+        //    Utility.WriteMessage("Divisão por 0. Impossível.", "", "\n");
+        //}
+
+        //internal void DisplayGenericError()
+        //{
+        //    Utility.WriteMessage("Erro.", "", "\n");
+        //}
+
+        //internal void NumericFormatError()
+        //{
+        //    Utility.WriteMessage("Erro. Insira valores numéricos.", "", "\n\n");
+        //}
+        #endregion
     }
 }
