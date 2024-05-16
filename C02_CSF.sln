@@ -59,8 +59,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E07_PersonList", "E07_Perso
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D17_Collections_Generic_Queue", "D17_Collections_Generic_Queue\D17_Collections_Generic_Queue.csproj", "{E0DD588D-9ADE-4BFC-83E4-6491129D58EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D18_Collections_Generic_Stack", "D18_Collections_Generic_Stack\D18_Collections_Generic_Stack.csproj", "{B5ACD96D-0C58-4D90-9CF0-04D86F0D21F5}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D16_Collections_Generic_List", "D16_Collections_Generic_List\D16_Collections_Generic_List.csproj", "{7A51495A-5CCC-48AE-8864-93C884E2D2D4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D18_CollectionsGeneric_Stack", "D18_CollectionsGeneric_Stack\D18_CollectionsGeneric_Stack.csproj", "{D614F87B-7CCD-4346-8FBF-3C1B8379AD47}"
@@ -187,10 +185,6 @@ Global
 		{E0DD588D-9ADE-4BFC-83E4-6491129D58EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E0DD588D-9ADE-4BFC-83E4-6491129D58EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E0DD588D-9ADE-4BFC-83E4-6491129D58EF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B5ACD96D-0C58-4D90-9CF0-04D86F0D21F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B5ACD96D-0C58-4D90-9CF0-04D86F0D21F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B5ACD96D-0C58-4D90-9CF0-04D86F0D21F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B5ACD96D-0C58-4D90-9CF0-04D86F0D21F5}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7A51495A-5CCC-48AE-8864-93C884E2D2D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7A51495A-5CCC-48AE-8864-93C884E2D2D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A51495A-5CCC-48AE-8864-93C884E2D2D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
