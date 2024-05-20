@@ -15,6 +15,7 @@ namespace E08_Collections_ListManipulation_Person
             Utility.SetUnicodeConsole();
             #endregion
 
+            // Todo MRS: só se faz 1 try. Acho que já tinha referido isto anteriormente.
             try
             {
                 #region Variables
@@ -34,8 +35,10 @@ namespace E08_Collections_ListManipulation_Person
                     {
                         PersonUtility.ShowMenu();
 
+                        // Todo MRS: devia ser um try.parse. E se o user escreve aaa? O ideal é fazer um método utilitário para o efeito.
                         switchOption = int.Parse(Console.ReadLine());
 
+                        // Todo MRS: as verificações se o nº é válido ou não, deviam ser feitas num método que só devolve para o Main se é válido ou não.
                         switch (switchOption)
                         {
                             case 1:
@@ -117,6 +120,7 @@ namespace E08_Collections_ListManipulation_Person
                     }
                     catch (FormatException ex)
                     {
+                        // Todo MRS: o try não deve  ser usado para substituir o try.parse
                         Utility.WriteMessage("Invalid option.\nPlease enter a number [1 - 8]", "", "\n\n");       
                     }
                     catch (Exception ex)
