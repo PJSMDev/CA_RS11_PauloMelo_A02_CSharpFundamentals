@@ -86,6 +86,7 @@ namespace E08_Collections_ListManipulation_Person
             {
                 list.Remove(personToRemove);
 
+                // Todo MRS: não se mexe no id depois de ter sido atribuído; é como nas tabelas das bds
                 foreach (Person person in list)
                 {
                     if (person.Id > idToRemove)
@@ -130,6 +131,7 @@ namespace E08_Collections_ListManipulation_Person
         {
             Console.Clear();
 
+            // Todo MRS: porquê var se a lista é de persons?
             foreach (var person in list)        // tenho de usar var??? Acho que sim
             {
                 Utility.WriteMessage($"ID: {person.Id} -> Name: {person.Name}", "", "\n");
