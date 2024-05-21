@@ -27,6 +27,24 @@ namespace E08_Collections_ListManipulation_Person
 
         #endregion
 
+        #region Try Parse Switch Option
+
+        internal static bool TryParseOption(string input, out int option)
+        {
+            return int.TryParse(input, out option);
+        }
+
+        #endregion
+
+        #region Validate Switch Option
+
+        internal static bool ValidateSwitchOption(int option)
+        {
+            return option >= 1 && option <= 8;
+        }
+
+        #endregion
+
         #endregion
 
     }

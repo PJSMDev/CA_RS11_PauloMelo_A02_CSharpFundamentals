@@ -20,7 +20,7 @@ namespace E08_Collections_ListManipulation_Person
 
         #region Constructors
 
-        internal Person() 
+        internal Person()
         {
             Id = 0;
             Name = string.Empty;
@@ -53,11 +53,8 @@ namespace E08_Collections_ListManipulation_Person
         {
             if (position >= 0 && position <= list.Count)
             {
-                // Criar a nova pessoa com o ID automático
                 Person personToInsert = new Person(nameToInsert);
                 list.Insert(position, personToInsert);
-                personToInsert.Id = NextId++;
-
                 Utility.WriteMessage($"ID: {personToInsert.Id} - Name: {nameToInsert} inserted successfully.", "", "\n\n");
             }
             else
@@ -85,20 +82,12 @@ namespace E08_Collections_ListManipulation_Person
             if (personToRemove != null)
             {
                 list.Remove(personToRemove);
-
-                // Todo MRS: não se mexe no id depois de ter sido atribuído; é como nas tabelas das bds
-                foreach (Person person in list)
-                {
-                    if (person.Id > idToRemove)
-                    {
-                        person.Id--;
-                    }
-                }
-
+                Utility.WriteMessage($"ID: {idToRemove} removed sucessfully.", "", "\n\n");
                 return true;
             }
             else
             {
+                Utility.WriteMessage($"ID {idToRemove} not found.", "", "\n\n");
                 return false;
             }
         }
@@ -110,7 +99,7 @@ namespace E08_Collections_ListManipulation_Person
         internal static void SortListById(List<Person> list)
         {
             Utility.WriteMessage("List sorted by ID.", "", "\n\n");
-            list.Sort((person01, person02) => person01.Id.CompareTo(person02.Id));       
+            list.Sort((person01, person02) => person01.Id.CompareTo(person02.Id));
         }
 
         #endregion
@@ -127,12 +116,11 @@ namespace E08_Collections_ListManipulation_Person
 
         #region 7. List Person
 
-        internal static void ListPerson(List<Person> list) 
+        internal static void ListPerson(List<Person> list)
         {
             Console.Clear();
 
-            // Todo MRS: porquê var se a lista é de persons?
-            foreach (var person in list)        // tenho de usar var??? Acho que sim
+            foreach (Person person in list)
             {
                 Utility.WriteMessage($"ID: {person.Id} -> Name: {person.Name}", "", "\n");
             }

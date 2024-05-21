@@ -12,40 +12,49 @@ namespace E08_Collections_ListManipulation_Person
         static void Main(string[] args)
         {
             #region Set Unicode
+
             Utility.SetUnicodeConsole();
+
             #endregion
 
-            // Todo MRS: só se faz 1 try. Acho que já tinha referido isto anteriormente.
             try
             {
                 #region Variables
+
                 int switchOption = 0;
                 string name;
                 List<Person> personList = new List<Person>();
+
                 #endregion
 
                 #region Title
+
                 Utility.WriteTitle("Menu");
+
                 #endregion
 
-                #region Fluxo
+                #region Flux
                 do
                 {
                     try
                     {
                         PersonUtility.ShowMenu();
 
-                        // Todo MRS: devia ser um try.parse. E se o user escreve aaa? O ideal é fazer um método utilitário para o efeito.
-                        switchOption = int.Parse(Console.ReadLine());
+                        string inputOption = Console.ReadLine();
 
-                        // Todo MRS: as verificações se o nº é válido ou não, deviam ser feitas num método que só devolve para o Main se é válido ou não.
+                        if (!PersonUtility.TryParseOption(inputOption, out switchOption) || !PersonUtility.ValidateSwitchOption(switchOption))
+                        {
+                            Utility.WriteMessage("Invalid option.\nEnter a number [1 - 8].", "\n", "\n\n");
+                        }
+
                         switch (switchOption)
                         {
                             case 1:
                                 Console.Clear();
-                                Utility.WriteMessage("Insert name: ");      // devo tirar o insert name daqui?
+                                Utility.WriteMessage("Insert name: ");
                                 name = Console.ReadLine();
                                 Person.AddPerson(personList, name);
+                                Person.ListPerson(personList);
                                 break;
                             case 2:
                                 Console.Clear();
@@ -55,6 +64,7 @@ namespace E08_Collections_ListManipulation_Person
                                     Utility.WriteMessage("Insert name: ");
                                     string nameToInsert = Console.ReadLine();
                                     Person.InsertPersonByPosition(personList, position - 1, nameToInsert);
+                                    Person.ListPerson(personList);
                                 }
                                 else
                                 {
@@ -89,6 +99,7 @@ namespace E08_Collections_ListManipulation_Person
                                     if (Person.RemovePersonById(personList, idToRemove))
                                     {
                                         Utility.WriteMessage($"ID: {idToRemove} removed successfully.", "", "\n\n");
+                                        Person.ListPerson(personList);
                                     }
                                     else
                                     {
@@ -97,16 +108,18 @@ namespace E08_Collections_ListManipulation_Person
                                 }
                                 else
                                 {
-                                    Utility.WriteMessage("Invalid input. Please enter a valid integer.", "", "\n\n");
+                                    Utility.WriteMessage("Invalid input.", "", "\n\n");
                                 }
                                 break;
                             case 5:
                                 Console.Clear();
                                 Person.SortListById(personList);
+                                Person.ListPerson(personList);
                                 break;
                             case 6:
                                 Console.Clear();
                                 Person.SortListByName(personList);
+                                Person.ListPerson(personList);
                                 break;
                             case 7:
                                 Console.Clear();
@@ -118,14 +131,9 @@ namespace E08_Collections_ListManipulation_Person
                                 break;
                         }
                     }
-                    catch (FormatException ex)
-                    {
-                        // Todo MRS: o try não deve  ser usado para substituir o try.parse
-                        Utility.WriteMessage("Invalid option.\nPlease enter a number [1 - 8]", "", "\n\n");       
-                    }
                     catch (Exception ex)
                     {
-                        Utility.WriteMessage($"Error: {ex.Message}", "", "\n\n"); 
+                        Utility.WriteMessage($"Error: {ex.Message}", "", "\n\n");
                     }
                 } while (switchOption != 8);
                 #endregion
