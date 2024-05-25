@@ -14,6 +14,7 @@ namespace E08_Collections_ListManipulation_Person
         #region Menu
         internal static void ShowMenu()
         {
+            // Todo MRS: sério, Paulo? Fazer um a um? Carrega os valores do menu para um array/arraylist/list/dictionary e depois lista
             Utility.WriteMessage("1. Add person", "", "\n");
             Utility.WriteMessage("2. Insert person in position", "", "\n");
             Utility.WriteMessage("3. Find person by id", "", "\n");
@@ -29,6 +30,7 @@ namespace E08_Collections_ListManipulation_Person
 
         #region Try Parse Switch Option
 
+        // Tod MRS: os métodos devem ter nomes com verbos de ação. Este nome o que diz é o nome do método que é usado. Alterar.
         internal static bool TryParseOption(string input, out int option)
         {
             return int.TryParse(input, out option);
@@ -38,7 +40,8 @@ namespace E08_Collections_ListManipulation_Person
 
         #region Validate Switch Option
 
-        internal static bool ValidateSwitchOption(int option)
+        // Todo MRS: atenção aos nomes dos métodos, devem refletir o que fazem. Por ex: ValidateMenuOption
+        internal static bool (int option)
         {
             return option >= 1 && option <= 8;
         }
