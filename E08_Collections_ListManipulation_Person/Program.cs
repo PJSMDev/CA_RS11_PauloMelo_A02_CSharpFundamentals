@@ -36,6 +36,7 @@ namespace E08_Collections_ListManipulation_Person
                 #region Flux
                 do
                 {
+                    // Todo MRS: acho que já disse isto várias vezes, mas repito: só 1 try e no início
                     try
                     {
                         PersonUtility.ShowMenu();
